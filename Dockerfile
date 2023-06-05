@@ -12,4 +12,4 @@ CMD ["echo", "agargi Printing build logs"]
 EXPOSE 8080
 CMD ["socat", "-T600", "TCP-LISTEN:8080,reuseaddr,fork", "EXEC:'/bin/bash'"]
 
-#ENTRYPOINT /bin/bash 
+ENTRYPOINT /bin/bash 
